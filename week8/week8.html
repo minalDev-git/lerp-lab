@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lerp Slider</title>
+    <link rel="stylesheet" href="week8.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../index.html">Go Back</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="input-section">
+        <h2>Enter two values between which new number would be lerped</h2>
+
+        <label for="start">Start Value</label>
+        <input id="start" type="number" value="10" class="input-box" />
+
+        <label for="end">End Value</label>
+        <input id="end" type="number" value="100" class="input-box" />
+      </section>
+
+      <section class="slider-section">
+        <label for="lerpSlider" class="slider-label">
+          Move the slider to observe the amount of lerping
+        </label>
+
+        <input
+          id="lerpSlider"
+          type="range"
+          min="0"
+          max="1"
+          step="0.01"
+          value="0.5"
+          class="slider"
+        />
+      </section>
+
+      <section class="output-section">
+        <p class="result">
+          The amount of lerping is: <span id="lerpAmount">0.5</span>
+        </p>
+        <p class="result">
+          The lerped value is: <span id="lerpValue">55</span>
+        </p>
+      </section>
+    </main>
+    <script src="week8.js"></script>
+  </body>
+</html>
