@@ -55,10 +55,6 @@ This lets you treat colors (`{r, g, b}`) as 3D points or positions (`{x, y}`) th
 
 ## Root demo (index.html + index.js)
 
-Files:
-- `index.html`
-- `index.js`
-
 What it demonstrates:
 - A full-window canvas with two fixed points labeled A and B.
 - An intermediate point C that moves smoothly between A and B using `vLerp` with a time-varying `t`.
@@ -67,17 +63,12 @@ What it demonstrates:
 - On the first click the page initializes an audio oscillator (user interaction is required by browsers to enable audio). The oscillator's frequency is controlled by `lerp` between `lowFreq` and `highFreq`, providing an audio feedback that follows the visual interpolation.
 
 How to interact:
-- Open `index.html` in a browser.
 - Observe the moving point and the background color smoothly changing — these are direct visual feedback of lerp in action.
 - Click anywhere on the canvas to enable sound (this is required by modern browsers; the click is a discoverable affordance that provides the necessary user gesture). After clicking you will hear a tone whose pitch follows the same interpolation pattern.
 
 ---
 
 ## Week8 demo (week8/week8.html + week8/week8.js)
-
-Files:
-- `week8/week8.html`
-- `week8/week8.js`
 
 What it demonstrates:
 - A small UI to experiment with numeric lerp. The page exposes:
@@ -89,20 +80,10 @@ Behavior:
 - As the slider is moved (direct manipulation), the computed value updates immediately.
 - The numeric inputs accept changes; when you change either start or end, the result updates right away.
 
-Why this is useful:
-- The slider provides continuous control and immediate feedback — a classic HCI pattern for exploring parameter space.
-- The interface supports discoverability (labels and clear results), responsiveness (instant updates), and visibility (you can see both the parameter and the resulting number).
-
-Example interaction:
-- Set start = 10, end = 100, move slider to 0.5 → result shows 55.00 (because lerp(10, 100, 0.5) = 55).
-
----
-
 ---
 
 ## Live Demo
-1. Website URL:
-   git clone https://github.com/minalDev-git/lerp-lab.git
+1. Website URL: https://minaldev-git.github.io/lerp-lab/
 2. Interact:
    - Move the slider in week8 to see numeric lerp results.
    - In the root demo, click the canvas to enable sound and watch the visual changes.
